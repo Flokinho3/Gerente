@@ -1,0 +1,20 @@
+# Ignorar o conteúdo da pasta .venv
+.venv
+
+# Ignorar o conteúdo da pasta Debug
+Debug
+
+# Ignorar o conteúdo de arquivos compilados Python
+__pycache__
+
+# Ignorar o conteúdo da pasta Sistema/Banco_de_dados
+Sistema/Banco_de_dados/*
+
+# Ignorar o conteúdo da pasta Sistema/Funcionarios
+Sistema/Funcionarios/*
+
+# Ignorar o conteúdo da pasta Sistema/Configuraçoes
+Sistema/Configuraçoes/*
+
+# Ignorar a sessão temporária caso aja
+Sistema/temp_session.json
