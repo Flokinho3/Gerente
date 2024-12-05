@@ -1,0 +1,19 @@
+/* index.css */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Sidebar/Sidebar.css') }}">
+    <title>Minha Primeira Aplicação Flask</title>
+</head>
+<body>
+    <div class="Sidebar" id="sidebar">
+        <div class="Sidebar-Header">
+            <h3>Menu</h3>
+        </div>
+        <div class="Sidebar-Content">
+            <a href="#">Perfil</a>
+            <a href="#">Vender</a>
+            <a href="#">Messas</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Conteúdo Principal</h1>
+        <p>Este é o conteúdo que ficará ao lado da sidebar.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='JS/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='CSS/Sidebar/Sidebar.js') }}"></script> <!-- Linha corrigida -->
+</body>
+</html>

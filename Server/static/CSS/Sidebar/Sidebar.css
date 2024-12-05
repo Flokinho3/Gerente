@@ -1,0 +1,84 @@
+/* Definindo o layout básico do corpo */
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para a Sidebar */
+.Sidebar {
+    background-color: black;
+    width: 250px;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: -250px; /* Inicialmente, a sidebar estará fora da tela */
+    transition: left 0.3s ease; /* Transição suave */
+}
+
+.Sidebar-Header {
+    display: flex;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.Sidebar-Content {
+    margin-top: 20px;
+}
+
+.Sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Sidebar a:hover {
+    background-color: #333;
+}
+
+/* Estilo do conteúdo principal */
+.container {
+    flex: 1;
+    padding: 20px;
+    background-color: lightgray;
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 28px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .Sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Classe que exibe a sidebar */
+.Sidebar.visible {
+    left: 0; /* Move a sidebar para dentro da tela */
+}
+
+/* Classe que oculta a sidebar */
+.Sidebar.hidden {
+    left: -250px; /* Move a sidebar para fora da tela */
+}
